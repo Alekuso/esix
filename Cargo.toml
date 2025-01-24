@@ -1,0 +1,18 @@
+[package]
+name = "esix"
+version = "0.1.1"
+edition = "2021"
+authors = ["Alex Olemans <alex@tanukii.dev>"]
+description = "A simple wrapper of the e621 API"
+keywords = ["e621", "esix", "api"]
+categories = ["api-bindings"]
+include = ["src/**/*", "LICENSE.md", "README.md"]
+license = "MIT"
+repository = "https://github.com/Alekuso/esix"
+homepage = "https://github.com/Alekuso/esix"
+documentation = "https://docs.rs/esix/"
+readme = "README.md"
+
+[dependencies]
+reqwest = {version = "0.12.12", features = ["blocking", "json"] }
+serde = { version = "1.0.217", features = ["derive"] }
